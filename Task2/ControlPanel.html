@@ -18,6 +18,18 @@
 </p>
 
 <p><input type ="submit"  value ="Backward" ></p>
-
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "8ed775e7-5bcc-449c-aaac-145c87582194", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "8cad52c8-018e-4c24-96da-ffe8d83647d2", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
 </body>
  </html>
